@@ -25,6 +25,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/header.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/apikey.js" defer></script>
+    <script src="./assets/js/data.js" defer></script>
 </head>
 <body>
     <div id="wrapper">
@@ -577,37 +579,7 @@
                     <ul class="swiper-wrapper content-list">
                     </ul>
                 </div>
-                <script>
-                    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=PlusLIVEEpilogue&channelId=UC1HWc_zvrY3WQdOAPiAMsFA&maxResults=8&key=AIzaSyBanWOzra7PaBsHnyx0KgAxKbK9mB1YMvk`)
-                    .then(res=>res.json())
-                    .then(json=>{
-    
-                        data = json.items;
-                        console.log(data);
-    
-                        let html=``;
-                            data.forEach(element => {
-                                html+=`
-                                <li class="swiper-slide content-item">
-                                    <a href="https://www.youtube.com/watch?v=${element.id.videoId}" target="_blank">
-                                        <div class="thumb">
-                                            <img src="${element.snippet.thumbnails.medium.url}" alt="오리지널 썸네일">
-                                        </div>
-                                        <div class="desc">
-                                            ${element.snippet.title}
-                                        </div>
-                                    </a>
-                                </li>`
-                            });
-    
-                        $('.sc-original .swiper ul').html(html);
-                    
-                        
-                        })
-                        .catch(error => {
-                            console.error('Error fetching data:', error);
-                        });
-                </script>
+                
             </section>
 
 
@@ -726,48 +698,10 @@
                     <button class="scroll-next"></button>
                     <div class="swiper content-box">
                         <ul class="swiper-wrapper content-list">
-                            
                         </ul>
                     </div>
-                </div>
-                
-            
-                <script>
-                    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=EP.838&channelId=UCbD8EppRX3ZwJSou-TVo90A&maxResults=5&key=AIzaSyBanWOzra7PaBsHnyx0KgAxKbK9mB1YMvk`)
-                    .then(res=>res.json())
-                    .then(json=>{
-
-                        data = json.items;
-                        console.log(data);
-
-                        let html=``;
-                            data.forEach(element => {
-                                html+=`
-                                <li class="swiper-slide content-item">
-                                    <a href="https://www.youtube.com/watch?v=${element.id.videoId}" target="_blank">
-                                        <div class="thumb">
-                                            <img src="${element.snippet.thumbnails.medium.url}" alt="추천 썸네일">
-                                        </div>
-                                        <div class="text">
-                                            <div class="desc">
-                                                <span>${element.snippet.title}</span>
-                                            </div>
-                                            <div class="name">
-                                                <span>엠카운트다운</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>`
-                            });
-
-                        $('.sc-video #tab1 ul').html(html);
                     
-                        
-                        })
-                        .catch(error => {
-                            console.error('Error fetching data:', error);
-                        });
-                </script>
+                </div>
 
                 <div id="tab2" class="tabbox">
                     <button class="scroll-prev"></button>
@@ -777,43 +711,7 @@
                         </ul>
                     </div>
                 </div>
-
-                <script>
-                    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=엠카운트다운&channelId=UCbD8EppRX3ZwJSou-TVo90A&maxResults=10&key=AIzaSyBanWOzra7PaBsHnyx0KgAxKbK9mB1YMvk`)
-                    .then(res=>res.json())
-                    .then(json=>{
-
-                        data = json.items;
-                        console.log(data);
-
-                        let html=``;
-                            data.forEach(element => {
-                                html+=`
-                                <li class="swiper-slide content-item">
-                                    <a href="https://www.youtube.com/watch?v=${element.id.videoId}" target="_blank">
-                                        <div class="thumb">
-                                            <img src="${element.snippet.thumbnails.medium.url}" alt="추천 썸네일">
-                                        </div>
-                                        <div class="text">
-                                            <div class="desc">
-                                                <span>${element.snippet.title}</span>
-                                            </div>
-                                            <div class="name">
-                                                <span>엠카운트다운</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>`
-                            });
-
-                        $('.sc-video #tab2 ul').html(html);
-                    
-                        
-                        })
-                        .catch(error => {
-                            console.error('Error fetching data:', error);
-                        });
-                </script>
+                
             </section>
 
 
