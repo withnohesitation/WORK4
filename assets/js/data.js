@@ -1,5 +1,5 @@
 //api
-import config from "../js/apikey.js";
+//import { config } from "./apikey.js";
 const API_KEY = config.apikey;
 
 //original
