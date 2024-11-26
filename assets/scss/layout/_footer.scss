@@ -1,0 +1,42 @@
+#footer {
+    padding: 36px 0 50px 20px;
+    background-color: rgb(249, 249, 249);
+    @include tablet {
+        width: 620px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .info-area {
+        margin-bottom: 20px;
+        .info-list {
+            display: flex;
+            flex-wrap: wrap;
+            .info-item{
+                &:not(:last-child) {
+                    margin-right: 16px;
+                }
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 20px;
+                text-align: center;
+                color: rgb(117, 117, 117);
+                &.bold {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .addr-area {
+        margin-bottom: 12px;
+        font-size: 12px;
+        line-height: 140%;
+        color: rgb(183, 179, 189);
+        font-style: normal;
+    }
+    .copy {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        color: rgb(183, 179, 189);
+    }
+}

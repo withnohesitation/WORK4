@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>엠넷플러스 Mnet Plus | K-POP TV Show | Artist Community | Live | Chat | Magazine | KCON</title>
+
+    <!--메타태그-->
+    <meta name="Author" content="최혜은">
+    <meta content="Mnet Plus is a fandom platform where you can experience and enjoy K-POP culture in real time and connect with artists and fans." name="description">
+    <meta content="엠넷플러스 Mnet Plus | K-POP TV Show | Artist Community | Live | Chat | Magazine | KCON" property="og:title">
+    <meta content="Mnet Plus is a fandom platform where you can experience and enjoy K-POP culture in real time and connect with artists and fans." property="og:description">
+    <meta content="https://www.mnetplus.world/images/og_mnetplus.png" property="og:image">
+    <meta content="엠넷플러스 Mnet Plus | K-POP TV Show | Artist Community | Live | Chat | Magazine | KCON" property="twitter:title">
+    <meta content="Mnet Plus is a fandom platform where you can experience and enjoy K-POP culture in real time and connect with artists and fans." property="twitter:description">
+    <meta content="https://www.mnetplus.world/images/og_mnetplus.png" property="twitter:image">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="summary_large_image" name="twitter:card">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/header.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/data.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="dimmed"></div>
+        <header id="header">
+            <nav class="gnb">
+                <h1 class="logo">
+                    <a href=""><img src="./assets/images/logo.png" alt="엠넷플러스"></a>
+                </h1>
+                <div class="util-area">
+                    <button class="btn-member" aria-label="회원정보">
+                        <img src="./assets/images/member.webp" alt="member">
+                    </button>
+                    <button class="btn-menu" aria-label="메뉴">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-1xnrcmv e16neqpw0"><path d="M21 12C21 12.1989 20.921 12.3897 20.7803 12.5303C20.6397 12.671 20.4489 12.75 20.25 12.75H3.75C3.55109 12.75 3.36032 12.671 3.21967 12.5303C3.07902 12.3897 3 12.1989 3 12C3 11.8011 3.07902 11.6103 3.21967 11.4697C3.36032 11.329 3.55109 11.25 3.75 11.25H20.25C20.4489 11.25 20.6397 11.329 20.7803 11.4697C20.921 11.6103 21 11.8011 21 12ZM3.75 6.75H20.25C20.4489 6.75 20.6397 6.67098 20.7803 6.53033C20.921 6.38968 21 6.19891 21 6C21 5.80109 20.921 5.61032 20.7803 5.46967C20.6397 5.32902 20.4489 5.25 20.25 5.25H3.75C3.55109 5.25 3.36032 5.32902 3.21967 5.46967C3.07902 5.61032 3 5.80109 3 6C3 6.19891 3.07902 6.38968 3.21967 6.53033C3.36032 6.67098 3.55109 6.75 3.75 6.75ZM20.25 17.25H3.75C3.55109 17.25 3.36032 17.329 3.21967 17.4697C3.07902 17.6103 3 17.8011 3 18C3 18.1989 3.07902 18.3897 3.21967 18.5303C3.36032 18.671 3.55109 18.75 3.75 18.75H20.25C20.4489 18.75 20.6397 18.671 20.7803 18.5303C20.921 18.3897 21 18.1989 21 18C21 17.8011 20.921 17.6103 20.7803 17.4697C20.6397 17.329 20.4489 17.25 20.25 17.25Z" fill="currentColor"></path></svg>
+                    </button>
+                </div>
+            </nav>
+            <div class="member-popup">
+                <div class="wrapper-box">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <header class="header-mem">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-e0dnmk e16nm5593"><path d="M18.75 5.25L5.25 18.75" stroke="black" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.75 18.75L5.25 5.25" stroke="black" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </header>
+                            <main class="container-mem">
+                                <div class="login">
+                                    <h2 class="blind">로그인 및 회원가입</h2>
+                                    <div class="title-wrap">
+                                        <h3 class="title">안녕하세요!</h3>
+                                        <p class="desc">이메일로 계정을 새로 만들거나 로그인해주세요.</p>
+                                    </div>
+                                    <div class="btn-wrap">
+                                        <button class="fill">로그인</button>
+                                        <button class="empty">회원가입</button>
+                                    </div>
+                                </div>
+                                <div class="notice">
+                                    <h2 class="blind">공지사항</h2>
+                                    <a href="" role="button">공지사항</a>
+                                    <a href="" role="button">고객센터</a>
+                                    <a href="" role="button">한국어</a>
+                                </div>
+                                <div class="policy">
+                                    <h2 class="blind">정책</h2>
+                                    <a href="" role="button">서비스 이용 약관</a>
+                                    <a href="" role="button" class="highlighted">개인정보 처리방침</a>
+                                    <a href="" role="button">청소년 보호정책</a>
+                                    <a href="" role="button">Open Source License</a>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-popup">
+                <div class="wrapper-box">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <header class="header-menu">
+                                <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-ogj8iu e17ks7pq0" style="cursor: pointer;"><path d="M9.12505 19.1L0.700048 10.7C0.600048 10.6 0.529382 10.4917 0.488049 10.375C0.446049 10.2583 0.425049 10.1333 0.425049 10C0.425049 9.86667 0.446049 9.74167 0.488049 9.625C0.529382 9.50834 0.600048 9.4 0.700048 9.3L9.12505 0.875001C9.35838 0.641668 9.65005 0.525002 10 0.525002C10.35 0.525002 10.65 0.650002 10.9 0.900002C11.15 1.15 11.275 1.44167 11.275 1.775C11.275 2.10833 11.15 2.4 10.9 2.65L3.55005 10L10.9 17.35C11.1334 17.5833 11.25 17.8707 11.25 18.212C11.25 18.554 11.125 18.85 10.875 19.1C10.625 19.35 10.3334 19.475 10 19.475C9.66672 19.475 9.37505 19.35 9.12505 19.1Z" fill="currentColor"></path></svg>
+                                <span>전체</span>
+                            </header>
+                            <main class="container-menu">
+                                <ul class="shortcut">
+                                    <li>
+                                        <a role="button" href="">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.6469 16.9924H4.36331C3.99115 16.9924 3.68945 16.6907 3.68945 16.3186C3.68945 13.8375 5.70075 11.8262 8.1818 11.8262H11.8284C14.3094 11.8262 16.3207 13.8375 16.3207 16.3186C16.3207 16.6907 16.019 16.9924 15.6469 16.9924Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.0052 10.087C11.9153 10.087 13.4637 8.53859 13.4637 6.62848C13.4637 4.71837 11.9153 3.16992 10.0052 3.16992C8.09504 3.16992 6.5466 4.71837 6.5466 6.62848C6.5466 8.53859 8.09504 10.087 10.0052 10.087Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                            <span class="name">프로필</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Megaphone"><path id="Vector" d="M1.25 9.37405C1.25103 8.37981 1.64645 7.42658 2.34949 6.72354C3.05253 6.0205 4.00576 5.62508 5 5.62405H8.10938C8.33672 5.61077 12.2984 5.33186 16.0711 2.1678C16.2533 2.01479 16.4753 1.91696 16.7112 1.88578C16.9471 1.8546 17.1869 1.89138 17.4026 1.9918C17.6183 2.09221 17.8008 2.25209 17.9288 2.45266C18.0567 2.65322 18.1248 2.88614 18.125 3.12405V15.6241C18.125 15.862 18.057 16.095 17.9291 16.2957C17.8012 16.4964 17.6187 16.6564 17.4029 16.7569C17.1872 16.8574 16.9473 16.8943 16.7114 16.8631C16.4755 16.832 16.2533 16.7341 16.0711 16.5811C13.1203 14.1061 10.0555 13.3967 8.75 13.1983V15.6764C8.75026 15.8824 8.69962 16.0852 8.60258 16.2669C8.50553 16.4486 8.36509 16.6035 8.19375 16.7178L7.33438 17.2905C7.16827 17.4013 6.97802 17.4708 6.77955 17.493C6.58109 17.5152 6.38019 17.4896 6.19367 17.4182C6.00716 17.3468 5.84046 17.2318 5.70754 17.0828C5.57462 16.9337 5.47934 16.755 5.42969 16.5616L4.51016 13.0959C3.60802 12.9759 2.78017 12.5324 2.18051 11.8478C1.58085 11.1632 1.25019 10.2841 1.25 9.37405ZM16.875 15.6186V3.12405C13.5305 5.92952 10.107 6.63967 8.75 6.81467V11.9303C10.1055 12.1084 13.5281 12.817 16.875 15.6186ZM6.64062 16.2436V16.2522L7.5 15.6795V13.1241H5.8125L6.64062 16.2436ZM5 11.874H7.5V6.87405H5C4.33696 6.87405 3.70107 7.13744 3.23223 7.60628C2.76339 8.07512 2.5 8.71101 2.5 9.37405C2.5 10.0371 2.76339 10.673 3.23223 11.1418C3.70107 11.6107 4.33696 11.874 5 11.874Z" fill="currentColor"></path></g></svg>
+                                            <span class="name">공지사항</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2669_3708)"><path d="M17.5 15.625V16.25C17.5 16.913 17.2366 17.5489 16.7678 18.0178C16.2989 18.4866 15.663 18.75 15 18.75H10.625" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17.5 10H15C14.6685 10 14.3505 10.1317 14.1161 10.3661C13.8817 10.6005 13.75 10.9185 13.75 11.25V14.375C13.75 14.7065 13.8817 15.0245 14.1161 15.2589C14.3505 15.4933 14.6685 15.625 15 15.625H17.5V10ZM17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10M2.5 10V14.375C2.5 14.7065 2.6317 15.0245 2.86612 15.2589C3.10054 15.4933 3.41848 15.625 3.75 15.625H5C5.33152 15.625 5.64946 15.4933 5.88388 15.2589C6.1183 15.0245 6.25 14.7065 6.25 14.375V11.25C6.25 10.9185 6.1183 10.6005 5.88388 10.3661C5.64946 10.1317 5.33152 10 5 10H2.5Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clipPath id="clip0_2669_3708"><rect width="20" height="20" fill="white"></rect></clipPath></defs></svg>
+                                            <span class="name">고객센터</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="menu">
+                                    <div class="community list-box">
+                                        <div class="title-wrap">
+                                            <h2 class="title">아티스트 커뮤니티</h2>
+                                            <a href="" class="link-more">더보기</a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic1.png" alt="1MILLION"></div>
+                                                    <p class="name">1MILLION</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic2.png" alt="8TURN"></div>
+                                                    <p class="name">8TURN</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic3.png" alt="BDU"></div>
+                                                    <p class="name">B.D.U</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="program list-box">
+                                        <div class="title-wrap">
+                                            <h2 class="title">Mnet 프로그램</h2>
+                                            <a href="" class="link-more">더보기</a>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic4.jpg" alt="I-LAND2"></div>
+                                                    <p class="name">I-LAND2 N/a</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic5.png" alt="엠카운트다운"></div>
+                                                    <p class="name">엠카운트다운</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="concert list-box">
+                                        <div class="title-wrap">
+                                            <h2 class="title">콘서트</h2>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic6.png" alt="MAMA AWARDS"></div>
+                                                    <p class="name">MAMA AWARDS</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic7.png" alt="KCON"></div>
+                                                    <p class="name">KCON</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="plus list-box">
+                                        <div class="title-wrap">
+                                            <h2 class="title">Mnet Plus 오리지널</h2>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic8.png" alt="chat"></div>
+                                                    <p class="name">플러스 챗</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic9.png" alt="magazine"></div>
+                                                    <p class="name">플러스 매거진</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="studio list-box">
+                                        <div class="title-wrap">
+                                            <h2 class="title">Mnet Digital Studio</h2>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic10.jpg" alt="M2"></div>
+                                                    <p class="name">M2</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb"><img src="./assets/images/icon/ic11.jpg" alt="studio CHOOM"></div>
+                                                    <p class="name">STUDIO CHOOM</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="etc list-box">
+                                        <h2 class="title">기타</h2>
+                                        <ul>
+                                            <li>
+                                                <a href="">
+                                                    <div class="thumb">
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="translation 1" clip-path="url(#clip0_2669_3658)"><g id="g1509"><g id="g1511"><g id="Clip path group"><mask id="mask0_2669_3658" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18" style="mask-type: luminance;"><g id="clipPath1517"><path id="path1515" d="M0.195496 0.198586H17.7955V17.7986H0.195496V0.198586Z" fill="white"></path></g></mask><g mask="url(#mask0_2669_3658)"><g id="g1513"><g id="g1519"><path id="path1521" d="M17.2794 9.20655V16.2524C17.2794 16.8216 16.8181 17.283 16.2488 17.283H9.20296C8.63371 17.283 8.17206 16.8216 8.17206 16.2524V9.82152H8.78703C9.35628 9.82152 9.81793 9.35987 9.81793 8.79062V8.17565H12.4483C13.1912 6.29843 15.0027 6.11452 15.0027 6.11452V8.17565H16.2488C16.8181 8.17565 17.2794 8.6373 17.2794 9.20655Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1523"><path id="path1525" d="M9.81843 1.74457V8.79041C9.81843 9.35966 9.35678 9.82132 8.78753 9.82132H5.54218C4.79934 11.6985 2.98778 11.8824 2.98778 11.8824V9.82132H1.74168C1.17243 9.82132 0.711121 9.35966 0.711121 8.79041V1.74457C0.711121 1.17532 1.17243 0.714009 1.74168 0.714009H8.78753C9.35678 0.714009 9.81843 1.17532 9.81843 1.74457Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1527"><path id="path1529" d="M3.19354 4.02515H7.33315" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1531"><path id="path1533" d="M5.26581 4.02515V3.19722" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1535"><path id="path1537" d="M4.23065 4.02596C4.23065 7.33765 7.33537 7.33765 7.33537 7.33765" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1539"><path id="path1541" d="M6.29826 4.02596C6.29826 7.33765 3.19354 7.33765 3.19354 7.33765" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1543"><path id="path1545" d="M10.6564 14.7986L12.7263 10.659L14.796 14.7986" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1547"><path id="path1549" d="M11.176 13.7654H14.2807" stroke="black" stroke-miterlimit="10" stroke-linejoin="round"></path></g><g id="g1551"><path id="path1553" d="M12.6135 1.74882H13.1309C15.4172 1.74882 17.2705 3.60218 17.2705 5.88843" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1555"><path id="path1557" d="M13.1288 2.78491L12.0939 1.75002L13.1288 0.715091" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1559"><path id="path1561" d="M5.36818 16.2379H4.85073C2.56448 16.2379 0.711121 14.3846 0.711121 12.0983" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g><g id="g1563"><path id="path1565" d="M4.84979 15.2034L5.88469 16.2383L4.84979 17.2732" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></g></g></g></g></g></g></g><defs><clipPath id="clip0_2669_3658"><rect width="17.6" height="17.6" fill="white" transform="translate(0.199219 0.199219)"></rect></clipPath></defs></svg>
+                                                    </div>
+                                                    <p class="name">언어설정</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="ad-banner">
+                                    <div class="col-left">
+                                        <h2 class="title">광고 문의하기</h2>
+                                        <p class="desc">Mnet Plus에 광고를 노출해보세요!</p>
+                                    </div>
+                                    <div class="col-right">
+                                        <button class="btn-shortcut">
+                                            광고 문의하기
+                                        </button>
+                                    </div>
+                                </div>
+                            </main>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main id="main" class="container">
+
+            <section class="sc-promo">
+                <h2 class="blind">프로모션 슬라이드</h2>
+                <button class="btn-next" aria-label="다음슬라이드"></button>
+                <button class="btn-prev" aria-label="이전슬라이드"></button>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="" class="link">
+                                <div class="thumb">
+                                    <img src="./assets/images/slide1.webp" alt="프로모션 슬라이드">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="link">
+                                <div class="thumb">
+                                    <img src="./assets/images/slide2.webp" alt="프로모션 슬라이드">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="link">
+                                <div class="thumb">
+                                    <img src="./assets/images/slide3.webp" alt="프로모션 슬라이드">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="link">
+                                <div class="thumb">
+                                    <img src="./assets/images/slide4.webp" alt="프로모션 슬라이드">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="link">
+                                <div class="thumb">
+                                    <img src="./assets/images/slide5.webp" alt="프로모션 슬라이드">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="link">
+                                <div class="thumb">
+                                    <img src="./assets/images/slide6.webp" alt="프로모션 슬라이드">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="" class="link">
+                                <div class="thumb">
+                                    <img src="./assets/images/slide7.jpg" alt="프로모션 슬라이드">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>                    
+                    <div class="pagination">
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="sc-now">
+                <h2 class="sub-title">Now</h2>
+                <button class="scroll-prev"><span class="blind">이전 스크롤</span></button>
+                <button class="scroll-next"><span class="blind">다음 스크롤</span></button>
+                <div class="swiper content-box">
+                    <ul class="swiper-wrapper content-list">
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/now1.webp" alt="now썸네일">
+                                    <p class="deco">
+                                        SPECIAL
+                                    </p>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>[뽈뽈뽈뽈 나수리캠 1화] 뭘 좋아할지 몰라서 다 준비해봤어🎀</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>I-LAND2 : N/a</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/now2.webp" alt="now썸네일">
+                                    <p class="deco">
+                                        SPECIAL
+                                    </p>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>나수리 방으로 GO!</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>I-LAND2 : N/a</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/now3.webp" alt="now썸네일">
+                                    <p class="deco">
+                                        SPECIAL
+                                    </p>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>메타볼로 최애 'I'에게 선물하는 방법 알아보기</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>I-LAND2 : N/a</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/now4.webp" alt="now썸네일">
+                                    <p class="deco">
+                                        SPECIAL
+                                    </p>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>[RIIZE(라이즈)] 변신 앞에 불가능은 없어, ‘Impossible’</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>Plus Magazine</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/now5.webp" alt="now썸네일">
+                                    <p class="deco">
+                                        SPECIAL
+                                    </p>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>[WOOAH(우아)] 어느 때보다 설렘 가득한 목소리로 감탄과 탄성을 자아내는 WOOAH(우아)의 ‘BLUSH’ </span>
+                                    </div>
+                                    <div class="name">
+                                        <span>MCD Magazine</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="sc-live">
+                <div class="live-header">
+                    <h2 class="sub-title">Plus LIVE</h2>
+                    <a href="" class="more-area">더보기</a>
+                </div>
+                <button class="scroll-prev"><span class="blind">이전 스크롤</span></button>
+                <button class="scroll-next"><span class="blind">다음 스크롤</span></button>
+                <div class="swiper content-box">
+                    <ul class="swiper-wrapper content-list">
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/plus1.png" alt="플러스라이브 썸네일">
+                                    <div class="deco">
+                                        VOD
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>來充電충전해~</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>리오</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/plus1.png" alt="플러스라이브 썸네일">
+                                    <div class="deco">
+                                        VOD
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>What?!</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>리오</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/plus1.png" alt="플러스라이브 썸네일">
+                                    <div class="deco">
+                                        VOD
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>我服了..</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>리오</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/plus5.jpg" alt="플러스라이브 썸네일">
+                                    <div class="deco">
+                                        VOD
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>🥁</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>현식</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/plus2.jpg" alt="플러스라이브 썸네일">
+                                    <div class="deco">
+                                        VOD
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>자얀.zip #5💛🏑🥅</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>자얀💛</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/plus3.jpg" alt="플러스라이브 썸네일">
+                                    <div class="deco">
+                                        VOD
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>히릿</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>렉스</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/plus2.jpg" alt="플러스라이브 썸네일">
+                                    <div class="deco">
+                                        VOD
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>자얀.zip #5💛🥦</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>자얀💛</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/plus4.jpg" alt="플러스라이브 썸네일">
+                                    <div class="deco">
+                                        VOD
+                                    </div>
+                                </div>
+                                <div class="text">
+                                    <div class="desc">
+                                        <span>월요일 요정🧚‍♀️</span>
+                                    </div>
+                                    <div class="name">
+                                        <span>수혜</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="sc-original">
+                <h2 class="sub-title">Plus Original</h2>
+                <button class="scroll-prev"><span class="blind">이전 스크롤</span></button>
+                <button class="scroll-next"><span class="blind">다음 스크롤</span></button>
+                <div class="swiper content-box">
+                    <ul class="swiper-wrapper content-list">
+                    </ul>
+                </div>
+                
+            </section>
+
+
+            <section class="sc-banner">
+                <h2 class="blind">카드배너</h2>
+                <button class="btn-prev" aria-label="이전슬라이드"></button>
+                <button class="btn-next" aria-label="다음슬라이드"></button>
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="thumb">
+                                <img src="./assets/images/slide1.webp" alt="카드배너 썸네일">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="thumb">
+                                <img src="./assets/images/slide2.webp" alt="카드배너 썸네일">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="thumb">
+                                <img src="./assets/images/slide3.webp" alt="카드배너 썸네일">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="thumb">
+                                <img src="./assets/images/slide4.webp" alt="카드배너 썸네일">
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="thumb">
+                                <img src="./assets/images/slide5.webp" alt="카드배너 썸네일">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination"></div>
+                </div>
+            </section>
+
+
+            <section class="sc-program">
+                <div class="program-header">
+                    <h2 class="sub-title">Mnet Program</h2>
+                    <a href="" class="more-area">더보기</a>
+                </div>
+
+                <div class="program-box">
+                    <ul class="profil-list">
+                        <li class="profil-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/program1.png" alt="엠카운트다운">
+                                    <div class="deco"><span>추천 프로그램</span></div>
+                                </div>
+                                <div class="name">엠카운트다운</div>
+                            </a>
+                        </li>
+                        <li class="profil-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/program2.png" alt="커플팰리스">
+                                    <div class="deco"><span>추천 프로그램</span></div>
+                                </div>
+                                <div class="name">커플팰리스</div>
+                            </a>
+                        </li>
+                        <li class="profil-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/program3.png" alt="빌드업">
+                                    <div class="deco"><span>추천 프로그램</span></div>
+                                </div>
+                                <div class="name">빌드업 : 보컬 보이그룹 서바이벌</div>
+                            </a>
+                        </li>
+                        <li class="profil-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/program4.png" alt="스트릿댄스걸스파이터2">
+                                    <div class="deco"><span>추천 프로그램</span></div>
+                                </div>
+                                <div class="name">스트릿댄스 걸스 파이터 2</div>
+                            </a>
+                        </li>
+                        <li class="profil-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/program5.png" alt="VS">
+                                    <div class="deco"><span>추천 프로그램</span></div>
+                                </div>
+                                <div class="name">초대형 노래방 서바이벌 VS</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="sc-video">
+                <div class="video-header">
+                    <div class="col-left">
+                        <h2 class="sub-title">Mnet TV</h2>
+                        <div class="tab-list">
+                            <button class="btn-recomm selected" role="tab" data-tab="#tab1">추천</button>
+                            <button class="btn-hot" role="tab" data-tab="#tab2">인기</button>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <a href="" class="more-area">더보기</a>
+                    </div>
+                </div>
+
+
+                <div id="tab1" class="tabbox selected">
+                    <button class="scroll-prev"><span class="blind">이전 스크롤</span></button>
+                    <button class="scroll-next"><span class="blind">다음 스크롤</span></button>
+                    <div class="swiper content-box">
+                        <ul class="swiper-wrapper content-list">
+                        </ul>
+                    </div>
+                    
+                </div>
+
+                <div id="tab2" class="tabbox">
+                    <button class="scroll-prev"><span class="blind">이전 스크롤</span></button>
+                    <button class="scroll-next"><span class="blind">다음 스크롤</span></button>
+                    <div class="swiper content-box">
+                        <ul class="swiper-wrapper content-list">
+                        </ul>
+                    </div>
+                </div>
+                
+            </section>
+
+
+
+            <section class="sc-moriginal">
+                <h2 class="sub-title">Mnet Plus Original</h2>
+                <div class="moriginal-box">
+                    <ul class="profil-list">
+                        <li class="profil-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/moriginal1.webp" alt="엠넷오리지널 썸네일">
+                                </div>
+                                <div class="name">ROAD TO MAX</div>
+                            </a>
+                        </li>
+                        <li class="profil-item">
+                            <a href="">
+                                <div class="thumb">
+                                    <img src="./assets/images/moriginal2.webp" alt="오리지널 썸네일">
+                                </div>
+                                <div class="name">Plus Magazine</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="sc-magazine">
+                <div class="magazine-header">
+                    <h2 class="sub-title">Plus Magazine</h2>
+                    <a href="" class="more-area">더보기</a>
+                </div>
+                <button class="scroll-prev"><span class="blind">이전 스크롤</span></button>
+                <button class="scroll-next"><span class="blind">다음 스크롤</span></button>
+                <div class="swiper content-box">
+                    <ul class="swiper-wrapper content-list">
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine1.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">PLUS ORIGINAL</span>
+                                        <span class="desc">[RIIZE(라이즈)] 변신 앞에 불가능은 없어, ‘Impossible’ | PLUS MAGAZINE ORIGINAL </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine2.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">MCD MAGAZINEL</span>
+                                        <span class="desc">[WOOAH(우아)] 어느 때보다 설렘 가득한 목소리로 감탄과 탄성을 자아내는 WOOAH(우아)의 ‘BLUSH’ | M COUNTDOWN 인터뷰 </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine3.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">PLUS+VIEW</span>
+                                        <span class="desc">[NOWADAYS/온앤오프 (ONF)] 강렬하게, 혹은 애절하게. 그들이 진심을 전달하는 법 | PLUS+VIEW </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine4.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">MCD MAGAZINE</span>
+                                        <span class="desc">[KISS OF LIFE(키스 오브 라이프)] 2000년대 댄스 팝 스타일로 대세를 입증하는 4명의 디바 KISS OF LIFE(키스 오브 라이프) ‘Midas Touch’ </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine5.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">PLUS ORIGINAL</span>
+                                        <span class="desc">[[투모로우바이투게더(TOMORROW X TOGETHER)] 함께하는 내일이라는 기적에 도달한 어린 왕자, [minisode 3: TOMORROW] | PLUS MAGAZINE ORIGINAL </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine6.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">MCD MAGAZINE</span>
+                                        <span class="desc">[아일릿(ILLIT)] 자석처럼 끌어당기는 아일릿(ILLIT)의 [SUPER REAL ME] | M COUNTDOWN 인터뷰</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine7.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">PLUS+VIEW</span>
+                                        <span class="desc">[더보이즈(THE BOYZ)/NCT DREAM] 두 보이 밴드가 전하는 사랑과 위로의 이야기 | PLUS+VIEW</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine8.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">MCD MAGAZINE</span>
+                                        <span class="desc">[THE NEW SIX] 불꽃처럼 강렬한 카리스마와 함께 ‘FUEGO’로 돌아온  THE NEW SIX(더 뉴 식스) | M COUNTDOWN 인터뷰 </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine9.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">PLUS ORIGINAL</span>
+                                        <span class="desc">[(여자)아이들/DAY6/VIVIZ] 아래에서 위로, 끊임없이 K팝에 새 생명을 불어넣는 역주행 | PLUS MAGAZINE ORIGINAL </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide content-item">
+                            <a href="">
+                                <img src="./assets/images/magazine10.png" alt="매거진 썸네일">
+                                <div class="bg">
+                                    <div class="text">
+                                        <span class="name">MCD MAGAZINE</span>
+                                        <span class="desc">[xikers(싸이커스)] 청량한 이미지를 잠시 내려놓고 올드스쿨을 전면에 내세운 xikers(싸이커스)의 ‘We Don’t Stop’ | M COUNTDOWN 인터뷰</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="sc-chat">
+                <h2 class="blind">플러스챗 배너</h2>
+                <div class="chat-box">
+                    <a href="">
+                        <div class="col-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="9.9" fill="white"></rect><path d="M32.425 12.371H33.853C34.2187 12.371 34.5147 12.6671 34.5147 13.0328C34.5147 13.3985 34.2187 13.6945 33.853 13.6945H32.425V15.1226C32.425 15.4883 32.1289 15.7843 31.7632 15.7843C31.3975 15.7843 31.1015 15.4883 31.1015 15.1226V13.6945H29.6735C29.3078 13.6945 29.0117 13.3985 29.0117 13.0328C29.0117 12.6671 29.3078 12.371 29.6735 12.371H31.1015V10.943C31.1015 10.5773 31.3975 10.2812 31.7632 10.2812C32.1289 10.2812 32.425 10.5773 32.425 10.943V12.371Z" fill="#EC0C6E"></path><path d="M31.1015 17.8066C31.1015 17.4409 31.3976 17.1449 31.7633 17.1449C32.129 17.1449 32.4251 17.4409 32.4251 17.8066V23.449C32.4251 24.8074 32.129 26.0438 31.5369 26.9668C31.5282 26.9842 31.5151 27.0017 31.5021 27.0191C31.489 27.0365 31.4759 27.0539 31.4672 27.0713C31.3279 27.2977 31.1538 27.5067 30.9796 27.6808C30.7881 27.8724 30.5617 28.0465 30.3353 28.2033C30.3092 28.2207 30.2874 28.2337 30.2657 28.2468C30.2439 28.2598 30.2221 28.2729 30.196 28.2903C30.135 28.3164 30.0784 28.3469 30.0218 28.3774C29.9652 28.4079 29.9086 28.4384 29.8477 28.4645L29.7432 28.5167C29.7171 28.5254 29.6953 28.5341 29.6735 28.5428C29.6518 28.5515 29.63 28.5603 29.6039 28.569C29.4994 28.6038 29.4123 28.6386 29.3252 28.6735C29.2817 28.6909 29.2382 28.7039 29.1947 28.717C29.1512 28.73 29.1075 28.7431 29.064 28.7605C29.0466 28.7605 29.0336 28.7649 29.0205 28.7692C29.0074 28.7736 28.9944 28.7779 28.977 28.7779C28.9421 28.7866 28.9117 28.7953 28.8812 28.804C28.8508 28.8127 28.8202 28.8215 28.7854 28.8302C28.3326 28.9347 27.8624 28.9869 27.34 29.0217C27.2355 29.0392 27.1485 29.0392 27.044 29.0392H18.6753L14.1638 32.1276C13.6292 32.4936 12.9031 32.1108 12.9031 31.4628V29.0176C11.3627 28.9115 10.1376 28.4155 9.26361 27.5415C8.28839 26.5837 7.80078 25.1905 7.80078 23.449V17.9982C7.80078 16.2567 8.30581 14.8809 9.26361 13.9057C10.2562 12.8957 11.7017 12.3906 13.5476 12.3906H26.9917C27.3574 12.3906 27.6534 12.6867 27.6534 13.0524C27.6534 13.4181 27.3574 13.7142 26.9917 13.7142H13.5302C12.0674 13.7142 10.9354 14.0799 10.204 14.8287C9.50741 15.5427 9.14171 16.6224 9.14171 17.9982V23.449C9.14171 26.2702 10.6219 27.7156 13.5476 27.7156H13.8754C14.0831 27.7156 14.2512 27.8845 14.2502 28.0921L14.2458 29.0392V30.4419L18.0516 27.846C18.1761 27.7611 18.3233 27.7156 18.4739 27.7156H26.6956C29.6213 27.7156 31.1015 26.2876 31.1015 23.449V17.8066Z" fill="url(#paint0_linear_3546_701)"></path><path d="M29.3757 23.3227C29.2539 23.4127 29.1031 23.4815 28.9231 23.5291C28.7484 23.5715 28.5658 23.5927 28.3752 23.5927C27.8618 23.5927 27.4674 23.463 27.1922 23.2036C26.9169 22.9442 26.7793 22.5631 26.7793 22.0602V18.3125H28.0179V19.3527H29.074V20.3055H28.0179V22.0443C28.0179 22.2243 28.0629 22.3646 28.1529 22.4652C28.2429 22.5604 28.3726 22.6081 28.542 22.6081C28.7325 22.6081 28.9019 22.5552 29.0501 22.4493L29.3757 23.3227Z" fill="#EC0C6E"></path><path d="M26.106 19.2588V23.5306H24.9229V23.0383C24.6159 23.4089 24.1713 23.5941 23.589 23.5941C23.1867 23.5941 22.8215 23.5041 22.4933 23.3242C22.1704 23.1442 21.9163 22.8875 21.731 22.554C21.5458 22.2205 21.4531 21.8341 21.4531 21.3947C21.4531 20.9554 21.5458 20.5689 21.731 20.2355C21.9163 19.902 22.1704 19.6453 22.4933 19.4653C22.8215 19.2853 23.1867 19.1953 23.589 19.1953C24.1342 19.1953 24.5603 19.3673 24.8673 19.7114V19.2588H26.106ZM23.8034 22.5778C24.1157 22.5778 24.3751 22.4719 24.5815 22.2602C24.7879 22.0432 24.8912 21.7547 24.8912 21.3947C24.8912 21.0348 24.7879 20.7489 24.5815 20.5372C24.3751 20.3202 24.1157 20.2116 23.8034 20.2116C23.4858 20.2116 23.2237 20.3202 23.0173 20.5372C22.8109 20.7489 22.7076 21.0348 22.7076 21.3947C22.7076 21.7547 22.8109 22.0432 23.0173 22.2602C23.2237 22.4719 23.4858 22.5778 23.8034 22.5778Z" fill="#EC0C6E"></path><path d="M19.28 19.1969C19.8093 19.1969 20.2354 19.3557 20.5583 19.6733C20.8865 19.9909 21.0506 20.462 21.0506 21.0866V23.5322H19.812V21.2772C19.812 20.9384 19.7379 20.687 19.5896 20.5229C19.4414 20.3535 19.227 20.2688 18.9465 20.2688C18.6342 20.2688 18.3854 20.3667 18.2001 20.5626C18.0149 20.7531 17.9222 21.039 17.9222 21.4201V23.5322H16.6836V17.6406H17.9222V19.705C18.0863 19.541 18.2848 19.4166 18.5177 19.3319C18.7506 19.2419 19.0047 19.1969 19.28 19.1969Z" fill="#EC0C6E"></path><path d="M14.0054 23.6236C13.439 23.6236 12.9255 23.5019 12.465 23.2584C12.0098 23.0096 11.6498 22.6682 11.3852 22.2341C11.1258 21.7948 10.9961 21.2998 10.9961 20.7493C10.9961 20.1988 11.1258 19.7065 11.3852 19.2725C11.6498 18.8331 12.0098 18.4917 12.465 18.2482C12.9255 17.9994 13.4416 17.875 14.0133 17.875C14.495 17.875 14.929 17.9597 15.3155 18.1291C15.7072 18.2985 16.0354 18.542 16.3 18.8596L15.4743 19.6218C15.0984 19.1878 14.6326 18.9707 14.0768 18.9707C13.7328 18.9707 13.4257 19.0475 13.1558 19.201C12.8858 19.3492 12.6741 19.5583 12.5206 19.8283C12.3724 20.0982 12.2983 20.4052 12.2983 20.7493C12.2983 21.0934 12.3724 21.4004 12.5206 21.6704C12.6741 21.9403 12.8858 22.1521 13.1558 22.3056C13.4257 22.4538 13.7328 22.5279 14.0768 22.5279C14.6326 22.5279 15.0984 22.3082 15.4743 21.8689L16.3 22.6311C16.0354 22.954 15.7072 23.2002 15.3155 23.3695C14.9238 23.5389 14.4871 23.6236 14.0054 23.6236Z" fill="#EC0C6E"></path><defs><linearGradient id="paint0_linear_3546_701" x1="20.0892" y1="25.3793" x2="30.7785" y2="15.2849" gradientUnits="userSpaceOnUse"><stop offset="0.104167" stop-color="#EC0C6E"></stop><stop offset="0.421875" stop-color="#B375DB"></stop><stop offset="0.588542" stop-color="#98A6FF"></stop><stop offset="0.78125" stop-color="#82CBFF"></stop><stop offset="1" stop-color="#64FFFF"></stop></linearGradient></defs></svg>
+                            <div class="text">
+                                <strong>Plus Chat</strong>
+                                <p class="desc">Let's Play! Let's Plus Chat!</p>
+                            </div>
+                        </div>
+                        <div class="col-right">
+                            <img src="./assets/images/chat1.png" alt="플러스챗">
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+
+            <section class="sc-mbanner">
+                <h2 class="blind">엠넷배너</h2>
+                 <a href="">
+                    <img src="./assets/images/vote1.webp" alt="아이랜드2 투표">
+                </a>
+            </section>
+
+
+        </main>
+        
+        <footer id="footer">
+            <h2 class="blind">엠넷플러스 푸터</h2>
+            <div class="info-area">
+                <h2 class="blind">정책 및 약관</h2>
+                <ul class="info-list">
+                    <li class="info-item"><a href="">서비스 이용 약관</a></li>
+                    <li class="info-item bold"><a href="">개인정보 처리방침</a></li>
+                    <li class="info-item"><a href="">청소년 보호정책</a></li>
+                    <li class="info-item"><a href="">광고 문의하기</a></li>
+                </ul>
+            </div>
+            <address class="addr-area">
+                <p>(주)씨제이이엔엠 대표이사 : 윤상현</p>
+                <p>주소 : (03926) 서울 마포구 상암산로 66 CJ E&M CENTER</p>
+                <p>사업자 등록번호 : 106-81-51510</p>
+                <p>개인정보 보호책임자 : 김지원</p>
+                <p>호스팅서비스제공자 : 스테이지랩스(주)</p>
+            </address>
+            <small class="copy">© CJ ENM. All Rights Reserved.</small>
+        </footer>
+
+
+        <div class="to-top">
+            <a href="" class="btn-top">
+                <span class="blind">맨 위로 이동</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-ogj8iu ed6ot5f0"><path d="M19.281 11.0302C19.2114 11.1 19.1287 11.1553 19.0376 11.193C18.9466 11.2308 18.849 11.2502 18.7504 11.2502C18.6519 11.2502 18.5543 11.2308 18.4632 11.193C18.3722 11.1553 18.2894 11.1 18.2198 11.0302L12.7504 5.55993V20.2496C12.7504 20.4485 12.6714 20.6393 12.5307 20.7799C12.3901 20.9206 12.1993 20.9996 12.0004 20.9996C11.8015 20.9996 11.6107 20.9206 11.4701 20.7799C11.3294 20.6393 11.2504 20.4485 11.2504 20.2496V5.55993L5.78104 11.0302C5.64031 11.171 5.44944 11.25 5.25042 11.25C5.05139 11.25 4.86052 11.171 4.71979 11.0302C4.57906 10.8895 4.5 10.6986 4.5 10.4996C4.5 10.3006 4.57906 10.1097 4.71979 9.96899L11.4698 3.21899C11.5394 3.14926 11.6222 3.09394 11.7132 3.05619C11.8043 3.01845 11.9019 2.99902 12.0004 2.99902C12.099 2.99902 12.1966 3.01845 12.2876 3.05619C12.3787 3.09394 12.4614 3.14926 12.531 3.21899L19.281 9.96899C19.3508 10.0386 19.4061 10.1214 19.4438 10.2124C19.4816 10.3035 19.501 10.4011 19.501 10.4996C19.501 10.5982 19.4816 10.6958 19.4438 10.7868C19.4061 10.8779 19.3508 10.9606 19.281 11.0302Z" fill="currentColor"></path></svg>
+            </a>
+        </div>
+    </div>
+
+
+</body>
+</html>
