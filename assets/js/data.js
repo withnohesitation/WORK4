@@ -1,6 +1,6 @@
 //original
 
-    fetch('../../assets/data/data_original.json')
+    fetch(`https://raw.githubusercontent.com/withnohesitation/WORK4/refs/heads/main/assets/data/data_original.json`)
     .then(res=>res.json())
     .then(json=>{
 
@@ -34,7 +34,7 @@
 
     //tab1
 
-    fetch('../../assets/data/data_recomm.json')
+    fetch(`https://raw.githubusercontent.com/withnohesitation/WORK4/refs/heads/main/assets/data/data_recomm.json`)
     .then(res=>res.json())
     .then(json=>{
 
@@ -73,7 +73,7 @@
     //tab2
 
 
-    fetch('../../assets/data/data_hot.json')
+    fetch(`https://raw.githubusercontent.com/withnohesitation/WORK4/refs/heads/main/assets/data/data_hot.json`)
     .then(res=>res.json())
     .then(json=>{
 
